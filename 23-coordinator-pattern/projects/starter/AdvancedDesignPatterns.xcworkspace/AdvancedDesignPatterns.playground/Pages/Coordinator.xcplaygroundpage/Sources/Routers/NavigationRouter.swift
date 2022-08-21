@@ -26,3 +26,64 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
+import UIKit
+
+//  1 Is a subclass of NSObject because is required to make it conform to UINavigationControllerDelegate
+public class NavigationRouter: NSObject {
+    
+//    2
+    private let navigationController: UINavigationController // used to push and pop viewControllers
+    private let routerRootController: UIViewController?
+    private var onDismissForViewController: [UIViewController:(()->Void)] = [:]
+    
+    public init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+        self.routerRootController = navigationController.viewControllers.first
+        
+        super.init()
+        
+        navigationController.delegate = self
+    }
+}
+
+// MARK: - Router
+extension NavigationRouter: Router {
+    
+//    1
+    public func present(_ viewController: UIViewController, animated: Bool, onDismissed: (() -> Void)?) {
+        onDismissForViewController[viewController] = onDismissed
+        navigationController.pushViewController(viewController, animated: animated)
+    }
+    
+//    2
+    public func dismiss(animated: Bool) {
+        guard let routerRootController = routerRootController else {
+            navigationController.popToRootViewController(animated: animated)
+            return
+        }
+        performOnDismissed(for: routerRootController)
+        navigationController.popToViewController(routerRootController, animated: animated)
+    }
+    
+//    3
+    private func performOnDismissed(for viewController: UIViewController) {
+        guard let onDismiss = onDismissForViewController[viewController] else {
+            return
+        }
+        onDismiss()
+        onDismissForViewController[viewController] = nil
+    }
+}
+
+
+// MARK: - UINAvigationControllerDelegate
+extension NavigationRouter: UINavigationControllerDelegate {
+    
+    public func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        
+        guard let dismissedViewController = navigationController.transitionCoordinator?.viewController(forKey: .from), !navigationController.viewControllers.contains(dismissedViewController) else {
+            return
+        }
+        performOnDismissed(for: dismissedViewController)
+    }
+}
