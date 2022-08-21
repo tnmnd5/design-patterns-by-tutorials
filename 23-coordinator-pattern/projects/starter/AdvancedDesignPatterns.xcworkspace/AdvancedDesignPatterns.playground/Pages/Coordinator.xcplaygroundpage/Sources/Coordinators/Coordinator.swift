@@ -26,3 +26,14 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
+public protocol Coordinator: AnyObject {
+    
+//    1
+    var children: [Coordinator] { get set}
+    var router: Router { get }
+    
+//    2
+    func present(animated: Bool, onDismissed: (() -> Void)?)
+    func dismiss(animated: Bool)
+    func presentChild(_ child: Coordinator, animated: Bool, onDismissed: (() -> Void)?)
+}
