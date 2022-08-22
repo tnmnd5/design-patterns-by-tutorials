@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FDEDDF828B3EDE100901548 /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEDDF728B3EDE100901548 /* AppDelegateRouter.swift */; };
 		428EF7AC21337A3400E953CF /* PainLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF7AB21337A3400E953CF /* PainLevelViewController.swift */; };
 		428EF7AE21337BCB00E953CF /* PainLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF7AD21337BCB00E953CF /* PainLevel.swift */; };
 		428EF7B021337BD400E953CF /* VisitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF7AF21337BD400E953CF /* VisitType.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FDEDDF728B3EDE100901548 /* AppDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
 		428EF7AB21337A3400E953CF /* PainLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainLevelViewController.swift; sourceTree = "<group>"; };
 		428EF7AD21337BCB00E953CF /* PainLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainLevel.swift; sourceTree = "<group>"; };
 		428EF7AF21337BD400E953CF /* VisitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitType.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				428EF7C7213471F100E953CF /* Router.swift */,
+				3FDEDDF728B3EDE100901548 /* AppDelegateRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -298,7 +301,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "Razeware, LLC";
 				TargetAttributes = {
 					42EA90E1212EF07300D01406 = {
@@ -354,6 +357,7 @@
 				42CF673B2138646900279A2A /* FakingItViewController.swift in Sources */,
 				428EF7D1213474BA00E953CF /* HomeViewController.swift in Sources */,
 				42EA90E6212EF07300D01406 /* AppDelegate.swift in Sources */,
+				3FDEDDF828B3EDE100901548 /* AppDelegateRouter.swift in Sources */,
 				428EF7B021337BD400E953CF /* VisitType.swift in Sources */,
 				42D47CB5212EFEC90057AC9B /* SelectPainLevelViewController.swift in Sources */,
 				428EF7E02135884000E953CF /* NoAppointmentRequiredViewController.swift in Sources */,
@@ -392,6 +396,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -453,6 +458,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
