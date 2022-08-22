@@ -28,7 +28,7 @@
 
 import UIKit
 
-class AppDelegateRouter: Router {
+public class AppDelegateRouter: Router {
 
   // MARK: - Instance Properties
   public let window: UIWindow

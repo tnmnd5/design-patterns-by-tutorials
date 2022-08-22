@@ -28,7 +28,7 @@
 
 import UIKit
 
-class HomeCoordinator: Coordinator {
+public class HomeCoordinator: Coordinator {
   
   // MARK: - Instance Properties
   public var children: [Coordinator] = []
