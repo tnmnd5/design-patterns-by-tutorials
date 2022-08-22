@@ -10,6 +10,7 @@
 		3FDEDDF828B3EDE100901548 /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEDDF728B3EDE100901548 /* AppDelegateRouter.swift */; };
 		3FDEDDFA28B431A300901548 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEDDF928B431A300901548 /* HomeCoordinator.swift */; };
 		3FDEDDFC28B43AFC00901548 /* PetAppointmentBuilderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEDDFB28B43AFC00901548 /* PetAppointmentBuilderCoordinator.swift */; };
+		3FDEDDFE28B4454A00901548 /* ModalNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDEDDFD28B4454A00901548 /* ModalNavigationRouter.swift */; };
 		428EF7AC21337A3400E953CF /* PainLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF7AB21337A3400E953CF /* PainLevelViewController.swift */; };
 		428EF7AE21337BCB00E953CF /* PainLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF7AD21337BCB00E953CF /* PainLevel.swift */; };
 		428EF7B021337BD400E953CF /* VisitType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428EF7AF21337BD400E953CF /* VisitType.swift */; };
@@ -36,6 +37,7 @@
 		3FDEDDF728B3EDE100901548 /* AppDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
 		3FDEDDF928B431A300901548 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		3FDEDDFB28B43AFC00901548 /* PetAppointmentBuilderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAppointmentBuilderCoordinator.swift; sourceTree = "<group>"; };
+		3FDEDDFD28B4454A00901548 /* ModalNavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationRouter.swift; sourceTree = "<group>"; };
 		428EF7AB21337A3400E953CF /* PainLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainLevelViewController.swift; sourceTree = "<group>"; };
 		428EF7AD21337BCB00E953CF /* PainLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainLevel.swift; sourceTree = "<group>"; };
 		428EF7AF21337BD400E953CF /* VisitType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitType.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				428EF7C7213471F100E953CF /* Router.swift */,
 				3FDEDDF728B3EDE100901548 /* AppDelegateRouter.swift */,
+				3FDEDDFD28B4454A00901548 /* ModalNavigationRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			files = (
 				428EF7AE21337BCB00E953CF /* PainLevel.swift in Sources */,
 				428EF7AC21337A3400E953CF /* PainLevelViewController.swift in Sources */,
+				3FDEDDFE28B4454A00901548 /* ModalNavigationRouter.swift in Sources */,
 				3FDEDDFA28B431A300901548 /* HomeCoordinator.swift in Sources */,
 				428EF7B52133806C00E953CF /* Coordinator.swift in Sources */,
 				3FDEDDFC28B43AFC00901548 /* PetAppointmentBuilderCoordinator.swift in Sources */,

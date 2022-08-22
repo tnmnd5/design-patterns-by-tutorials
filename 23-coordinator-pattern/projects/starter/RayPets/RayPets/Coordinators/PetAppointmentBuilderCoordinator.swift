@@ -72,6 +72,7 @@ extension PetAppointmentBuilderCoordinator: SelectVisitTypeViewControllerDelegat
   
   private func presentSelectPainLevelCoordinator() {
     let viewController = SelectPainLevelViewController.instantiate(delegate: self)
+    router.present(viewController, animated: true)
   }
 }
 

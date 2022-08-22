@@ -49,6 +49,8 @@ public class HomeCoordinator: Coordinator {
 // MARK: - HomeViewControllerDelegate
 extension HomeCoordinator: HomeViewControllerDelegate {
   public func homeViewControllerDidPressScheduleAppointment(_ viewController: HomeViewController) {
-    // TODO: - Write this
+    let router = ModalNavigationRouter(parentviewController: viewController)
+    let coordinator = PetAppointmentBuilderCoordinator(router: router)
+    presentChild(coordinator, animated: true)
   }
 }
